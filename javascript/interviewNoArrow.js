@@ -44,7 +44,7 @@ imageContainer.forEach((container) => {
   container.addEventListener('click', (event) => {
     event.preventDefault();
 
-    const link = 'https://trucvuong1503.github.io/recruitpage/interview2.html'; 
+    const link = 'https://hihatsu-lee.github.io/recruitpage/interview2.html'; 
 
     window.location.href = link;
   });
