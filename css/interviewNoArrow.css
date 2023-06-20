@@ -75,21 +75,31 @@ img {
   border-radius: .5rem;
 }
 @media screen and (max-width: 440px) {
-    #interview {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .image-container{
-        max-width: 240px;
-        margin-left: 0; /* 左マージンを0に設定 */
-        gap: 5px; /* 写真間の距離を5pxに設定 */
-    }
-    img {
-        max-width: 90%;
-        border-radius: .3rem;
-      }
+  #interview {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 240px;
+    margin-left: 0;
+    gap: 5px;
+    overflow: visible;
+  }
+  .image-wrapper {
+    width: calc(50% - 2.5px); 
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: .3rem;
+  }
 }
+
 @media screen and (max-width: 768px) {
 	#interview {
 	  flex-direction: column;
