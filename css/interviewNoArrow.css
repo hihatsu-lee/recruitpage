@@ -1,45 +1,47 @@
-/* 社員インタビューバタン */
-#interview{
-	display: flex;
-    justify-content: space-between; /* aligns children elements on the horizontal line with maximum space between */
-    align-items: flex-start;
-	background:#FADFE5;
-	border-right: 10px solid #EB456F;
-	padding-left: 40px;
+#interview {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #FADFE5;
+  border-right: 10px solid #EB456F;
+  padding-left: 40px;
 }
 
-#interview .recruit-info h1{
-	background-color: #fff;
-} 
+#interview .recruit-info h1 {
+  background-color: #fff;
+}
+
 #interview .recruit-info p {
-	display: flex;
-	align-items: center;
-	margin-bottom: 0.5em;
-	font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  font-size: 14px;
 }
 
-#interview .recruit-info{
-	text-align: left;
+#interview .recruit-info {
+  text-align: left;
 }
+
 .background-section {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 30px 0;
-	padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 0;
 }
+
 .interview-section {
-	margin-right: 90px;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	position: relative;
+  margin-right: 90px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .image-container {
-	overflow-x: hidden;
-	max-width: 768px;
-	margin-left: 150px; 
+  overflow-x: hidden;
+  max-width: 768px;
+  margin-left: 150px;
 }
 
 .image-container {
@@ -59,6 +61,7 @@
   transition: .3s;
   justify-items: center;
 }
+
 .image-wrapper > * {
   aspect-ratio: 4 / 3;
   overflow: hidden;
@@ -67,6 +70,7 @@
   justify-content: center;
   align-items: center;
 }
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -74,12 +78,14 @@ img {
   display: block;
   border-radius: .5rem;
 }
+
 @media screen and (max-width: 440px) {
   #interview {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+  
   .image-container {
     display: flex;
     flex-wrap: wrap;
@@ -90,9 +96,11 @@ img {
     gap: 5px;
     overflow: visible;
   }
+  
   .image-wrapper {
     width: calc(100% / 3 - 2.5px);
   }
+  
   img {
     max-width: 100%;
     height: auto;
@@ -101,19 +109,20 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-	#interview {
-	  flex-direction: column;
-	  align-items: center;
-	  text-align: center;
-	}
-	.image-container{
-		margin-left: 70px;
-		max-width: 400px;
-	}
+  #interview {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
+  .image-container {
+    margin-left: 70px;
+    max-width: 400px;
+  }
+}
+
 @media screen and (max-width: 900px) {
-	.image-container{
-		max-width: 500px;
-	}
+  .image-container {
+    max-width: 500px;
+  }
 }
