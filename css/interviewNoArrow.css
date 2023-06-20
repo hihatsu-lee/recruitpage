@@ -180,12 +180,12 @@ img {
           text-align: center;
         }
         .image-container{
-            max-width: 240px;
+            max-width: 200px;
             margin-left: 0; /* 左マージンを0に設定 */
             gap: 5px; /* 写真間の距離を5pxに設定 */
         }
         img {
-            max-width: 90%;
+            max-width: 70%;
             border-radius: .3rem;
           }
     }
