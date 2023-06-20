@@ -1,4 +1,4 @@
-/*.fadeinleft {
+.fadeinleft {
   opacity: 0;
   transform: translateX(-300px);
   max-width: 100%;
@@ -46,7 +46,7 @@
     opacity: 1;
     transform: translateX(0);
   }
-}*/
+}
 .interview-section {
   margin-top: 120px;
   background-color: #fff;
