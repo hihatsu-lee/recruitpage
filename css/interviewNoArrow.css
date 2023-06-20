@@ -91,7 +91,7 @@ img {
     overflow: visible;
   }
   .image-wrapper {
-    width: calc(50% - 2.5px); 
+    width: calc(100% / 3 - 2.5px);
   }
   img {
     max-width: 100%;
