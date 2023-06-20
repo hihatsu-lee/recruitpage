@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSSリンク -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./css/message.css">
+    <link rel="stylesheet" type="text/css" href="./css/news.css">
+    <link rel="stylesheet" type="text/css" href="./css/recruit.css">
+    <link rel="stylesheet" type="text/css" href="./css/interviewNoArrow.css">
+    <link rel="icon" href="./images/1.png" type="image">
+    <!-- FONTリンク-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <!-- JAVASCRIPTリンク -->
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/interviewNoArrow.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <!-- ICONリンク -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>日発株式会社・採用サイト</title>
+</head>
+<body>
+  <!-- HEADER - NAVIGATION -->
+  <nav class="navbar">
+    <div class="content-nav">
+      <div class="logo">
+        <a href="index.html" class="logo">
+        <img src="./images/logo1.png" alt="Logo"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#home" id="home-show" class="nav-links">TOP</a></li>
+          <li><a href="#news" id="news-show" class="nav-links">NEWS</a></li>
+          <li><a href="#about" id="about-show" class="nav-links">MESSAGE</a></li>
+          <li><a href="#about-pdf" id="about-pdf-show" class="nav-links">ABOUT</a></li>
+          <li class="dropdown">
+            <a href="index.html#interview" id="interview-show" class="nav-links">INTERVIEW</a>
+            <ul class="dropdown-menu">
+              <li><a href="interview2.html">社員インタビュー</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#recruit" id="recruit-show" class="nav-links">RECRUIT</a>
+            <ul class="dropdown-menu">
+              <li><a href="graduate.html">新卒採用</a></li>
+              <li><a href="expert.html">経験者採用</a></li>
+            </ul>
+          </li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- キャッチコピー -->
+<div class="container">
+    <section class="home" id="home">
+        <div class="content">
+            <h1 class="title">どんな小さな</h1>
+            <h1 class="title">一歩でも必ず</h1>
+            <h1 class="title">前に進める</h1>
+        </div> 
+    </section>
+  <!-- NEWS -->
+    <div id="news" class="section">
+      <div class="news-header"> 
+        <h1>NEWS</h1>
+        <p class="subheading">新着情報</p>
+        <div class="announcement">
+          <span>24卒向け説明会開催!</span>
+        </div>
+      </div>
+      <div class="event-list">
+        <ul>
+          <li>
+            <div class="list-item">
+              <div class="date">10/05</div>
+              <div>新卒リクナビ2024<br>
+                詳しくは <a href="https://job.rikunabi.com/2024/company/r157772078/"target="_blank">こちら</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div class="date">11/05</div>
+              <div>新卒リクナビ2024<br>
+                詳しくは <a href="https://job.rikunabi.com/2024/company/r157772078/"target="_blank">こちら</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div class="date">12/05</div>
+              <div>新卒リクナビ2024<br>
+                詳しくは <a href="https://job.rikunabi.com/2024/company/r157772078/"target="_blank">こちら</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list-item">
+              <div class="date">13/05</div>
+              <div>キャリタス就活2024<br>
+                詳しくは <a href="https://job.career-tasu.jp/2024/corp/00140872/"target="_blank">こちら</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
+    </div>
+    <!-- MESSAGE -->
+<section class="about" id="about">
+    <div class="imagelist">
+        <img src="./images/image1.jpg" alt="Image1" class="show">
+        <img src="./images/image2.jpg" alt="Image2" class="show">
+    </div>
+    
+    <div class="textlist">
+        <img src="./images/lala4.png" class="lalaleft">
+        <img src="./images/23499570.png" class="lalamid">
+        <div class="textlist-second">
+            <h1>MESSAGE</h1>
+            <h2 style="font-size: 2rem;">採用メッセージ</h2><br>
+            <h3>Turning A Negative Situation<br>
+                Into A Positive One</h3><br>
+            <p  class="heading" style="font-size: 2rem;">ネガティブを<span>ポジティブ</span>に変えよう</p>
+            <p>当社は、“これからを大切にする”、</p>
+            <p>弱みを強みに変える社風が定着。</p>
+            <p>経験豊富なエンジニアだけではなく、</p>
+            <p>未経験のエンジニアも積極的に採用し、</p>
+            <p>育成・成長を促す体制があります。</p>
+                <br>
+            <p>自分なりの理想・目標があるなら、</p>
+            <p>“日々発展”する日発で一緒に働きませんか？</p><br>
+        </div>
+        <img src="./images/lala3.png" class="lalaright">
+    </div>
+</section>  
+ <!--ABOUT PDF  -->
+  <div class="news-h1" id="about-pdf" style="visibility: visible; animation-name: fadeInUp;">
+      <h1>ABOUT</h1>
+  </div>
+  <div id="news-file">
+    <div class="pdf-embed">
+        <div class="added-text">下記のスライドにて、会社説明の資料をご覧いただけます</div>
+        <iframe src="./other/Company-briefing-materials.pdf#toolbar=0&navpanes=0&scrollbar=0" class="emble-pdf" width="70%" height="500px">
+        </iframe>
+      </div>
+  </div>
+</div>
+  <!-- INTERVIEW -->
+    <div id="interview" class="section">
+     <div class="news-header"> 
+      <h1>PEOPLE</h1>
+      <p class="subheading">社員インタビュー</p>
+      <div class="announcement">
+        日発にどんな先輩がいるの？<br>
+          若手からべテラン！<br>
+        彼らの一日を覗いてみよう！
+      </div>
+    </div> 
+     <div class="background-section">
+        <div class="interview-section">
+          <div class="interview-container">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <div>
+                  <img src="./images/2020mid-career.png" alt="Employee 1">
+                </div>
+                <div>
+                  <img src="./images/2021mid-career.png" alt="Employee 1">
+                </div>
+                <div>
+                  <img src="./images/2022New graduate（man）.png" alt="Employee 1">
+                </div>
+                <div>
+                  <img src="./images/2022New graduate（women）.png" alt="Employee 1">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- RECRUIT -->
+    <div id="recruit" class="section">
+      <div class="news-header"> 
+        <h1 style="background-color: #FADFE5;">RECRUIT</h1>
+        <p class="subheading">募集要項</p>
+        <div class="announcement">
+          <span>2024年度新卒採用!</span>
+        </div>
+      </div> 
+        <div class="recruit-options">
+                <div class="recruit-option">
+                    <a href="graduate.html" class="recruit-link" id="left">新卒採用</a>
+                </div>
+                <div class="recruit-option">
+                    <a href="expert.html" class="recruit-link">経験者採用</a>
+                </div>
+            </div> 
+    </div>
+</div>
+<!-- FOOTER -->
+<footer>
+    <div id="footer" style="top: 0px;">
+        <div class="container">
+            <div class="footer_hd">
+                <h3 class="footer_group_ttl wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                  <div class="logo-container">  
+                    <img class="logo-img-small" src="./images/logo2.png" alt="">
+                    <span class="ja">日発株式会社</span>
+                  </div>
+                    <span class="en">©HIHATU Co.,Ltd. 2012, 2021. All Rights Reserved.</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

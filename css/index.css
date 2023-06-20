@@ -1,0 +1,72 @@
+:root{
+    --red:rgba(255, 0, 0, 0.596);
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: 'Raleway',Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding:2rem 9%;
+}
+body {
+    color: #333;
+    font-size: 16px;
+    font-family: Raleway,Verdana,Meiryo, Hiragino Kaku Gothic Pro,sans-serif;
+    line-height: 1.8;
+    word-wrap: break-word;
+    margin: 0;
+    padding:0;
+    background-color: #fff;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* フッタ */
+#footer {
+    background: #f2f2f2;
+    padding: 30px;
+}
+.footer_hd {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+.footer_group_ttl {
+    letter-spacing: .1em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.footer_group_ttl .en {
+    font-family: 'Raleway',Meiryo, Hiragino Kaku Gothic Pro, sans-serif;
+    display: block;
+    font-size: 13px;
+}
+.footer_group_ttl .ja {
+    text-align: center;
+}
+.logo-img-small{
+    padding-right: 10px;
+    height: 2.0em;
+    text-align: center;
+}
+
+
+ 
+  
+ 
+  
