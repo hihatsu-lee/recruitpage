@@ -42,8 +42,6 @@
   overflow-x: hidden;
   max-width: 768px;
   margin-left: 150px;
-  display: flex;
-  justify-content: center;
 }
 
 .image-wrapper {
@@ -83,7 +81,6 @@ img {
   }
   
   .image-container {
-    display: flex;
     justify-content: center;
     max-width: 200px;
     margin-left: 0;
