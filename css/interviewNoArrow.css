@@ -181,6 +181,8 @@ img {
           height: auto;
         }
         .image-container {
+          display: flex;
+          justify-content: center;
           max-width: 200px;
           margin-left: 0;
           gap: 5px;
@@ -188,7 +190,7 @@ img {
         }
         
         img {
-          max-width: 200px;
+          max-width: 300px;
           border-radius: .3rem;
         }
       }
