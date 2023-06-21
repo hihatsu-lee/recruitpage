@@ -1,67 +1,72 @@
-#interview {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background: #FADFE5;
-  border-right: 10px solid #EB456F;
-  padding-left: 40px;
-  height: 400px;
+/* 社員インタビューバタン */
+#interview{
+	display: flex;
+    justify-content: space-between; /* aligns children elements on the horizontal line with maximum space between */
+    align-items: flex-start;
+	background:#FADFE5;
+	border-right: 10px solid #EB456F;
+	padding-left: 40px;
 }
 
-#interview .recruit-info h1 {
-  background-color: #fff;
-}
-
+#interview .recruit-info h1{
+	background-color: #fff;
+} 
 #interview .recruit-info p {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5em;
-  font-size: 14px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5em;
+	font-size: 14px;
 }
 
-#interview .recruit-info {
-  text-align: left;
+#interview .recruit-info{
+	text-align: left;
 }
-
 .background-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0;
-  padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px 0;
+	padding: 0;
+}
+.interview-section {
+	margin-right: 90px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
 }
 
-.interview-section {
-  margin-right: 90px;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
+.image-container {
+	overflow-x: hidden;
+	max-width: 768px;
+	margin-left: 150px; 
 }
 
 .image-container {
   overflow-x: hidden;
-  max-width: 768px;
-  margin-left: 150px;
+  width: 768px;
+  display: flex;
+  justify-content: center;
 }
 
 .image-wrapper {
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  width: 100%;
-  gap: 1.5rem;
-  padding-bottom: 1.5rem;
-  scroll-snap-type: x mandatory;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+  grid-gap: 1.5rem;
+  position: relative;
+  left: 0;
+  transition: .3s;
+  justify-items: center;
 }
-
 .image-wrapper > * {
-  flex-shrink: 0;
   aspect-ratio: 4 / 3;
-  width: calc((100% - 4.5rem) / 3);
-  scroll-snap-align: start;
+  overflow: hidden;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 img {
   max-width: 100%;
   max-height: 100%;
@@ -69,59 +74,43 @@ img {
   display: block;
   border-radius: .5rem;
 }
-
 @media screen and (max-width: 440px) {
-  #interview {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: auto;
-  }
-  
-  .image-container {
-    max-width: 200px;
-    margin-left: 0;
-    gap: 5px;
-    overflow: visible;
-  }
-  
-  .image-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .image-wrapper > * {
-    width: calc(100% / 3 - 2.5px);
-    margin-bottom: 5px;
-  }
-  
-  img {
-    max-width: 100%;
-    border-radius: .3rem;
-  }
-}
+    #interview {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: auto;
+    }
+    .image-container{
+        max-width: 200px;
+        margin-left: 0; /* 左マージンを0に設定 */
+        gap: 5px; /* 写真間の距離を5pxに設定 */
+    }
 
+    .interview-section{
+      width: auto;
+    }
+
+
+    img {
+        max-width: 100%;
+        border-radius: .3rem;
+      }
+}
 @media screen and (max-width: 768px) {
-  #interview {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: auto;
+	#interview {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	}
+	.image-container{
+		margin-left: 70px;
+		max-width: 400px;
+	}
   }
   
-  .image-container {
-    margin-left: 70px;
-    max-width: 400px;
-  }
-  
-  .image-wrapper {
-    grid-auto-columns: calc((100% - (1.5rem * (3 - 1))) / 3);
-  }
-}
-
 @media screen and (max-width: 900px) {
-  .image-container {
-    max-width: 500px;
-  }
+	.image-container{
+		max-width: 500px;
+	}
 }
