@@ -180,9 +180,17 @@ img {
           align-items: center;
           text-align: center;
         }
-        .image-container{
+        .interview-section {
+          margin-right: 90px;
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          position: relative;
           display: flex;
           justify-content: center;
+        }
+        
+        .image-container{
           max-width: 200px;
           margin-left: 0; /* 左マージンを0に設定 */
           gap: 5px; /* 写真間の距離を5pxに設定 */
