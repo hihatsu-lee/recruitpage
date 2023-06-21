@@ -83,11 +83,12 @@ img {
   }
   
   .image-container {
+    display: flex;
+    justify-content: center;
     max-width: 200px;
     margin-left: 0;
     gap: 5px;
     overflow: visible;
-    text-align: center;
   }
 
   img {
