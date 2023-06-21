@@ -180,42 +180,18 @@ img {
           text-align: center;
           height: auto;
         }
-        .image-container{
-            max-width: 200px;
-            margin-left: 0; /* 左マージンを0に設定 */
-            gap: 5px; /* 写真間の距離を5pxに設定 */
+        .image-container {
+          max-width: 200px;
+          margin-left: 0;
+          gap: 5px;
+          overflow: visible;
         }
+        
         img {
-            max-width: 50%;
-            border-radius: .3rem;
-          }
-    }
-    @media screen and (max-width: 768px) {
-      #interview {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+          max-width: 30%;
+          border-radius: .3rem;
+        }
       }
-      .image-container{
-        margin-left: 70px;
-        max-width: 400px;
-      }
-      }
-      
-    @media screen and (max-width: 900px) {
-      .image-container{
-        max-width: 500px;
-      }
-    }
-    width: calc(100% / 3 - 2.5px);
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: .3rem;
-  }
-}
 
 @media screen and (max-width: 768px) {
   #interview {
@@ -226,20 +202,22 @@ img {
   }
   
   .image-container {
-    margin-left: 70px;
-    max-width: 400px;
+    margin-left: 50px; 
+    max-width: 400px; 
   }
   
   .image-wrapper {
-    grid-auto-columns: calc((100% - (1.5rem * (3 - 1))) / 3);
+    grid-auto-columns: 100%; 
+    grid-gap: 10px; 
+  }
+  
+  .image-wrapper > * {
+    max-width: 100%; 
   }
 }
 
 @media screen and (max-width: 900px) {
-  #interview {
-    height: auto;
-  }
   .image-container {
-    max-width: 500px;
+    max-width: 500px; 
   }
 }
