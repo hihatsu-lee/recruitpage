@@ -188,7 +188,7 @@ img {
         }
         
         img {
-          max-width: 30%;
+          max-width: 200px;
           border-radius: .3rem;
         }
       }
